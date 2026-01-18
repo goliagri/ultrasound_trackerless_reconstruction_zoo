@@ -205,3 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# TUS-REC data symlink (points to external data directory)
+TUS-REC2025-Challenge_baseline/data

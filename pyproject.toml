@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usrec-zoo"
+version = "0.1.0"
+description = "A zoo of methods for trackerless 3D freehand ultrasound reconstruction"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "torch>=2.0",
+    "torchvision",
+    "pytorch3d",
+    "h5py",
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
